@@ -96,21 +96,30 @@
     <img style="width: 80%;" src="./resources/incontext.png"
          alt="In-context Image Copy Detection figure"/>
     <br>
-
+    <p style="width: 80%;">
+        The illustration for our in-context Image Copy Detection (ICD) with AnyPattern. In-context ICD necessitates a well-trained ICD model to be prompted to novel patterns with the assistance of a few image-replica pairs and without any fine-tuning process. In realistic scenarios, this setup is highly practical as it provides a feasible solution for a deployed ICD system faced with unseen patterns.
+    </p>
+      
+    <br><br>
+    <hr>
       
     <h1>Method Overview</h1>
     <img style="width: 80%;" src="./resources/method.png"
          alt="Method overview figure"/>
     <br>
-
+      <p style="width: 80%;">
+        The proposed ImageStacker includes: (a) prompt selection fetches the most representative image-replica pair from the whole pool for a given query, and (b) prompting design stacks the selected image-replica pair onto a query along the channel dimension, and thus the image-replica pair conditions the feed-forward process. In (c), we show how to unify prompt selection and prompting design into one vision transformer.    
+      </p>
     <br><br>
     <hr>
 
     <h1>AnyPattern Enables In-context ICD</h1>
-    <img style="width: 80%;" src="./resources/results.png"
+    <img style="width: 80%;" src="./resources/result.png"
          alt="Results figure"/>
-
-    <br><br>
+      <p style="width: 80%;">
+       In-context learning does not emerge when using SmallPattern and ImageNet-pretrained models: comparing against baseline with 16.18% in μAP, ImageStacker only achieves 15.28% in μAP. 
+    </p>
+   <br><br>
     <hr>
 
     <h1>Paper</h1>
