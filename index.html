@@ -73,10 +73,16 @@
     <div class="links"><a href="https://huggingface.co/datasets/WenhaoWang/AnyPattern">[Data]</a></div>
       <br>
       <style>
+      /* 全局样式，使得所有内容水平居中对齐 */
+      body {
+          text-align: center; /* 为所有元素设置水平居中 */
+      }
+      
+      /* 特定类样式，适用于链接，以防止链接内的换行 */
       .links {
-          display: flex;       /* 使用flex布局 */
-          justify-content: center; /* 水平居中 */
-          white-space: nowrap;     /* 防止内容换行 */
+          display: inline-block; /* 将链接设置为内联块，这样text-align才会有效 */
+          white-space: nowrap;   /* 防止链接内容换行 */
+          margin: 0 auto;        /* 对于块级元素，这样设置可以实现水平居中 */
       }
       </style>
     <div class="links"><a href="https://github.com/WangWenhao0716/AnyPattern">[Code for in-context ICD]</a></div>
